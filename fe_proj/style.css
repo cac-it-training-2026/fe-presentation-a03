@@ -54,6 +54,27 @@ html {
     background-color: #2980b9;
 }
 
+/* ▼追加：引用元テキスト（薄文字＋少し太字） */
+.source-text {
+    font-size: 0.8rem;
+    color: #999;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+/* ▼追加：引用リンク（控えめ表示） */
+.source-link {
+    font-size: 0.75rem;
+    color: #999;
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+/* ▼追加：ホバー時 */
+.source-link:hover {
+    color: #666;
+}
+
 /* 選択肢のレイアウト */
 .quiz-options {
     display: flex;
