@@ -137,6 +137,13 @@ body {
     border-left: 6px solid #e74c3c;
 }
 
+/* ▼追加：正解文を赤字＋少し大きく表示 */
+.correct-box .answer-text {
+    color: #e74c3c;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 /* ▼追加：解説を区別表示（青ライン） */
 .explanation-box {
     border-left: 6px solid #3498db;
