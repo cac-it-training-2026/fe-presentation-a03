@@ -110,6 +110,7 @@ body {
     border-top: 1px solid #e0e0e0;
 }
 
+/*
 .correct-answer {
     color: #e74c3c;
     font-size: 1.1rem;
@@ -118,5 +119,36 @@ body {
 
 .explanation {
     margin-bottom: 0;
+    line-height: 1.6;
+}
+*/
+
+/* ▼追加：正解・解説をブロック化するための共通枠 */
+.answer-box {
+    margin-top: 12px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+/* ▼追加：正解を強調表示（赤ライン） */
+.correct-box {
+    border-left: 6px solid #e74c3c;
+}
+
+/* ▼追加：解説を区別表示（青ライン） */
+.explanation-box {
+    border-left: 6px solid #3498db;
+}
+
+/* ▼追加：見出し（正解・解説ラベル） */
+.answer-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* ▼追加：本文の読みやすさ改善 */
+.answer-text {
     line-height: 1.6;
 }
