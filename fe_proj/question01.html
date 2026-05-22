@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>基本情報 フィッシング練習問題</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="quiz-container">
+            <h3 class="quiz-question">問題1: 手順に示すセキュリティ攻撃はどれか。</h3>
+            
+            
+            <div>
+				<p>[手順]</p>
+				
+				<ol>
+					<li>攻撃者が金融機関の偽のWebサイトを用意する。</li>
+					<li>金融機関の社員を偽って、偽のWebサイトへ誘導するURLを本文中に含めた電子メールを送信する。</li>
+					<li>電子メールの受信者が、その電子メールを信用して本文中にURLをクリックすると、偽のWebサイト
+					    に誘導される。</li>
+					<li>偽のWebサイトと気付かずに認証情報を入力すると、その情報が攻撃者に渡る</li>
+				</ol>
+			</div>
+
+            <form class="quiz-options">
+                <label>
+                    <input type="radio" name="q1" value="1" /> 1. DDoS攻撃
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="2" /> 2. フィッシング
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="3" /> 3. ボット
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="4" /> 4. メールヘッダー
+                    インジェクション
+                </label>
+            </form>
+
+            <details class="quiz-answer">
+                <summary>解答と解説を見る</summary>
+                <div class="answer-content">
+                    <p class="correct-answer">
+                        <strong>正解：2. フィッシング</strong>
+                    </p>
+                    <p class="explanation">
+                        <strong>解説：</strong><br />
+                        フィッシング(phishing)は、銀行やクレジットカード会社、ショッピングサイトなどの有名企業を装
+                        ったメールを送付し、メール本文内のハイパーリングをクリックさせることで、本物そっくりな<b>偽のWebサイト</b>
+                        に誘導し、設置してある入力フォームに入力した情報などの<b>個人情報</b>を<b>不正に搾取</b>する行為
+                        です。<br>
+                        <strong>1.DDoS攻撃 解説：</strong><br />
+                        DDos攻撃とは、悪意を持った<b>第三者が複数のデバイス</b>を乗っ取り、標的のWebサイトやサーバーへ一斉に<b>大量のアクセスやデータ</b>を送りつける<bb>サイバー攻撃</b>です。<br>
+                        <strong>3.ボット 解説：</strong><br />
+                        ボットとは、</bb>自動化されたプログラム</b>（ボット）を用いてWebサイトの破壊、データの窃取、不正購入などを<b>大規模</b>かつ<b>高速</b>に行う攻撃のことです。<br>
+                        <strong>4.メールヘッダーインジェクション 解説：</strong><br />
+                        メールヘッダーインジェクションとは、Webサイトのお問い合わせフォームなどで入力された内容に、攻撃者が<b>「改行コード」</b>や<b>「不正なヘッダー情報」</b>を紛れ込ませることで、メールの送信処理を<b>意図的に操作</b>するサイバー攻撃です。
+                        
+                    </p>
+                </div>
+                <div>
+					<a href="index.html">一覧に戻る</a>
+				</div>
+            </details>
+        </div>
+    </body>
+</html>
