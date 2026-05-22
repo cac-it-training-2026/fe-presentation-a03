@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML/CSS 4択問題</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="quiz-container">
+            <h3 class="quiz-question">問題2: DDoS攻撃の特徴はどれですか？</h3>
+
+            <form class="quiz-options">
+                <label>
+                    <input type="radio" name="q1" value="1" /> 
+                    1. 不正中継が可能なメールサーバを見つけた後、それを踏み台にチェーンメールを大量に送信する。
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="2" /> 
+                    2. 特定のターゲットに対し、フィッシングメールを送信して不正サイトへ誘導する。
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="3" /> 
+                    3. 特定のWebサイトに対し、日時を決めて、複数台のPCから同時に攻撃する。
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="4" /> 
+                    4. セキュリティパッチが提供される前にパッチが対象とする脆弱性を攻撃する。
+                </label>
+            </form>
+
+            <details class="quiz-answer">
+                <summary>解答と解説を見る</summary>
+                <div class="answer-content">
+                    <p class="correct-answer">
+                        <strong>正解：3. 特定のWebサイトに対し、日時を決めて、複数台のPCから同時に攻撃する。</strong>
+                    </p>
+                    <p class="explanation">
+                        <strong>解説：</strong><br />
+                        
+                        「1. 不正中継が可能なメールサーバを見つけた後、それを踏み台にチェーンメールを大量に送信する。」
+                        は<strong>スパムメール送信行為</strong>の特徴です。外部からの不正中継を許可しているSMTPサーバは
+                        スパムメールの踏み台にされてしまいます。<br />
+                        「2. 特定のターゲットに対し、フィッシングメールを送信して不正サイトへ誘導する。」は<strong>フィッシング
+                        </strong>の特徴です。<br />
+                        「4. セキュリティパッチが提供される前にパッチが対象とする脆弱性を攻撃する。」は<strong>ゼロデイ攻撃
+						</strong>の特徴です。
+                    </p>
+                </div>
+            </details>
+        </div>
+    </body>
+</html>
