@@ -8,6 +8,10 @@ body {
     background-color: #f4f7f6;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 /* ▼修正：問題の枠組み */
 .quiz-container {
     background-color: #ffffff;
@@ -86,7 +90,7 @@ body {
     background-color: #fcfcfc;
     border: 1px solid #e0e0e0;
     border-radius: 6px;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 /* 「解答と解説を見る」のテキスト部分 */
