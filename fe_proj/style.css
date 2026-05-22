@@ -8,26 +8,46 @@ body {
     background-color: #f4f7f6;
 }
 
-/* 問題の枠組み */
+/* ▼修正：問題の枠組み */
 .quiz-container {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 24px;
-    width: 90%; /* 追加：画面の90%まで使用 */
+    width: 90%; /* 画面の90%まで使用 */
     max-width: 900px; /* 600px → 1000px */
     margin: 0 auto 24px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* 問題文 */
-.quiz-question {
-    margin-top: 0;
-    font-size: 1.1rem;
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
+/* ▼追加：問題タイトルとボタンを横並び */
+.question-header {
+    display: flex; /* 横並び */
+    align-items: center; /* 縦位置中央 */
+    justify-content: flex-start; /* 左右配置 */
+    gap: 12px; /* 要素間余白 */
     margin-bottom: 20px;
+}
+
+/* ▼修正：問題文 */
+.quiz-question {
+    margin: 0;
+}
+
+/* ▼追加：ナビゲーションボタン */
+.nav-btn {
+    padding: 10px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* ▼追加：ホバー時 */
+.nav-btn:hover {
+    background-color: #2980b9;
 }
 
 /* 選択肢のレイアウト */

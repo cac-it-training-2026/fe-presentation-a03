@@ -7,9 +7,29 @@
     </head>
     <body>
         <div class="quiz-container">
-            <h3 class="quiz-question">問題2: DDoS攻撃の特徴はどれですか？</h3>
+			
+			<!-- ▼追加：問題ヘッダー -->
+   			<div class="question-header">
+				   
+				<!-- ▼追加：前の問題ボタン -->
+        		<button class="nav-btn prev-btn">
+            		← 前へ
+        		</button>
 
-            <form class="quiz-options">
+        		<!-- ▼既存：問題文 -->
+				<h3 class="quiz-question">
+				問題2: DDoS攻撃の特徴はどれですか？
+				</h3>
+				
+				<!-- ▼追加：次の問題ボタン -->
+        		<button class="nav-btn next-btn">
+        		    次へ →
+        		</button>
+
+    		</div>
+    		
+			<!-- ▼既存：選択肢 -->
+	        <form class="quiz-options">
                 <label>
                     <input type="radio" name="q1" value="1" /> 
                     1. 不正中継が可能なメールサーバを見つけた後、それを踏み台にチェーンメールを大量に送信する。
