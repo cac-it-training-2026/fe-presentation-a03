@@ -191,6 +191,39 @@ html {
     cursor: pointer;
     list-style: none;
     padding: 12px 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 6px;
+}
+
+/* ホバー時 */
+.glossary-main-title:hover {
+    background-color: #f2f2f2; /* 薄いグレー */
+    color: #333;
+}
+
+/* クリック中（押下時） */
+.glossary-main-title:active {
+    background-color: #e0e0e0;
+}
+
+/* 開いている状態の見た目 */
+details[open] .glossary-main-title {
+    background-color: #f7f7f7;
+}
+
+.glossary-main-title::marker {
+    display: none;
+}
+
+/* 矢印をCSSで制御したい場合 */
+.glossary-main-title::before {
+    content: "▼ ";
+    transition: transform 0.2s ease;
+}
+
+/* 開いたとき */
+details[open] .glossary-main-title::before {
+    content: "▲ ";
 }
 
 /* Safari用 */
