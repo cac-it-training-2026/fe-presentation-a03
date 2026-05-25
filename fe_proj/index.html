@@ -71,101 +71,180 @@
 
     <div class="glossary-list">
 
-      <details class="glossary-item">
-        <summary>ゼロデイ攻撃</summary>
-
-        <div class="glossary-content">
-          ソフトウェアやOSの脆弱性が発見され、修正パッチが提供される前の「0日目」の隙を狙ったサイバー攻撃。
-        </div>
-      </details>
-
-      <details class="glossary-item">
-        <summary>SEOポイズニング</summary>
-
-        <div class="glossary-content">
-          検索エンジンの上位表示を悪用し、悪意のあるサイトへユーザーを誘導する攻撃。マルウェア配布やフィッシングサイトへの誘導などを目的とする。
-        </div>
-      </details>
-
-      <details class="glossary-item">
-        <summary>クリックジャッキング</summary>
-
-        <div class="glossary-content">
-          ユーザーが意図しないクリックをさせる攻撃。透明なボタンやレイヤーを重ねて、重要な操作（送金・設定変更など）を誤って実行させる。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>クロスサイトスクリプティング</summary>
-
-        <div class="glossary-content">
-          Webサイトに悪意あるスクリプトを埋め込み、閲覧したユーザーのブラウザ上で不正な処理を実行させる攻撃。Cookie盗難や偽画面表示などが起こる。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>サイドチャネル攻撃</summary>
-
-        <div class="glossary-content">
-          暗号アルゴリズムそのものではなく、処理時間・電力消費・電磁波などの「副次的情報」から秘密情報を推測する攻撃。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>辞書攻撃</summary>
-
-        <div class="glossary-content">
-          あらかじめ用意した単語リスト（辞書）を使い、パスワードを総当たり的に試す攻撃。よく使われるパスワードに強い。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>ソーシャルエンジニアリング</summary>
-
-        <div class="glossary-content">
-          技術ではなく人間の心理（信頼・焦り・ミス）を利用して、パスワードや機密情報を盗み出す攻撃。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>DoS攻撃</summary>
-
-        <div class="glossary-content">
-          標的サーバーに大量のアクセスや処理負荷を与え、サービスを停止させる攻撃。通常は1台からの攻撃を指す。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>バッファオーバーフロー</summary>
-
-        <div class="glossary-content">
-          プログラムのメモリ領域（バッファ）を超えてデータを書き込み、他の領域を破壊したり不正コードを実行させる攻撃。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>ブルートフォース攻撃</summary>
-
-        <div class="glossary-content">
-          可能なパスワードをすべて組み合わせて試す総当たり攻撃。時間はかかるが理論上は必ず突破できる場合がある。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>水飲み場攻撃</summary>
-
-        <div class="glossary-content">
-          ターゲットがよく利用するWebサイトを改ざんし、そのサイト経由でマルウェア感染させる攻撃。待ち伏せ型の手法。
-        </div>
-      </details>
-      
-      <details class="glossary-item">
-        <summary>リスト型攻撃</summary>
-
-        <div class="glossary-content">
-          他サービスから流出したID・パスワードの組み合わせリストを使い、別サイトへのログインを試す攻撃。使い回しパスワードに弱い。
-        </div>
-      </details>
+		<details class="glossary-item">
+		  <summary>ARPスプーフィング</summary>
+		  <div class="glossary-content">
+		    LAN内で偽のARP情報をばらまき、通信先を攻撃者に誘導して通信を盗聴・改ざんする攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>SEOポイズニング</summary>
+		  <div class="glossary-content">
+		    検索エンジンの上位表示を悪用し、悪意のあるサイトへユーザーを誘導する攻撃。マルウェア配布やフィッシングサイトへの誘導などを目的とする。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>SQLインジェクション</summary>
+		  <div class="glossary-content">
+		    悪意のあるSQL文を入力として注入し、データベースを不正に操作する攻撃。情報の盗み出しや改ざん、削除などが可能になる。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>クリックジャッキング</summary>
+		  <div class="glossary-content">
+		    ユーザーが意図しないクリックをさせる攻撃。透明なボタンやレイヤーを重ねて、重要な操作（送金・設定変更など）を誤って実行させる。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>クレデンシャルスタッフィング</summary>
+		  <div class="glossary-content">
+		    漏洩したIDとパスワードの組み合わせを使い回し、別サービスへの不正ログインを試みる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>クロスサイトスクリプティング（XSS）</summary>
+		  <div class="glossary-content">
+		    Webサイトに悪意あるスクリプトを埋め込み、閲覧したユーザーのブラウザ上で不正な処理を実行させる攻撃。Cookie盗難や偽画面表示などが起こる。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>サイドチャネル攻撃</summary>
+		  <div class="glossary-content">
+		    暗号アルゴリズムそのものではなく、処理時間・電力消費・電磁波などの副次的情報から秘密情報を推測する攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>辞書攻撃</summary>
+		  <div class="glossary-content">
+		    あらかじめ用意した単語リスト（辞書）を使い、パスワードを総当たり的に試す攻撃。よく使われるパスワードに強い。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>セッションハイジャック</summary>
+		  <div class="glossary-content">
+		    正規ユーザーのセッションIDを盗み取り、そのユーザーになりすましてシステムに不正アクセスする攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ゼロデイ攻撃</summary>
+		  <div class="glossary-content">
+		    ソフトウェアやOSの脆弱性が修正される前（0日目）の隙を狙ったサイバー攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ソーシャルエンジニアリング</summary>
+		  <div class="glossary-content">
+		    技術ではなく人間の心理（信頼・焦り・ミス）を利用して、パスワードや機密情報を盗み出す攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>中間者攻撃（Man-in-the-Middle）</summary>
+		  <div class="glossary-content">
+		    通信の途中に攻撃者が割り込み、通信内容を盗聴・改ざんする攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>DNSキャッシュポイズニング</summary>
+		  <div class="glossary-content">
+		    DNSサーバーのキャッシュに偽情報を注入し、正規サイトではなく悪意あるサイトへ誘導する攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>DoS攻撃</summary>
+		  <div class="glossary-content">
+		    標的サーバーに大量のアクセスを送り付け、サービスを停止させる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>トロイの木馬</summary>
+		  <div class="glossary-content">
+		    一見無害なソフトウェアに見せかけて、裏で不正な動作を行うマルウェア。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>バッファオーバーフロー</summary>
+		  <div class="glossary-content">
+		    メモリ領域（バッファ）を超えてデータを書き込み、他の領域を破壊したり不正コードを実行させる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>パスワードスプレー攻撃</summary>
+		  <div class="glossary-content">
+		    少数のよく使われるパスワードを多数のアカウントに試すことで、不正ログインを狙う攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ブルートフォース攻撃</summary>
+		  <div class="glossary-content">
+		    可能なパスワードをすべて試す総当たり攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ボットネット</summary>
+		  <div class="glossary-content">
+		    マルウェアに感染した多数の端末を遠隔操作し、攻撃者が一斉に悪用できるネットワーク。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ポートスキャン攻撃</summary>
+		  <div class="glossary-content">
+		    サーバーの複数ポートを調べ、開いているサービスや脆弱性を探る行為。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>水飲み場攻撃</summary>
+		  <div class="glossary-content">
+		    ターゲットがよく利用するWebサイトを改ざんし、そのサイト経由でマルウェア感染させる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ランサムウェア</summary>
+		  <div class="glossary-content">
+		    データを暗号化し、復号と引き換えに身代金を要求するマルウェア。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>リスト型攻撃</summary>
+		  <div class="glossary-content">
+		    流出したID・パスワードの組み合わせを使い、別サイトへの不正ログインを試みる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>リプレイ攻撃</summary>
+		  <div class="glossary-content">
+		    正規通信データを記録し、それを再送して不正認証や操作を行う攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ルートキット</summary>
+		  <div class="glossary-content">
+		    攻撃者が不正侵入の痕跡を隠しつつ、管理者権限を維持するためのツール群。
+		  </div>
+		</details>
 
     </div>
 
