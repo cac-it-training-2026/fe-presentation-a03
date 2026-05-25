@@ -2,7 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>HTML/CSS 課題一覧</title>
+  <title>サイバー攻撃と対応策</title>
+  <!-- 検索エンジン向けのページ説明 -->
+  <meta
+       name="description"
+       content="サイバー攻撃と対応策についての練習問題です。"
+  />
+  <!-- レスポンシブ対応（スマホでも適切なサイズで表示） -->
+  <!-- 画面の横幅を「端末の幅」に合わせ、ページの初期ズーム倍率を「100%」にする -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- 自作CSSファイルを読み込み -->
+  <link rel="stylesheet" href="style.css">
+  
   <style>
     body { font-family: sans-serif; padding: 20px; background-color: #f4f7f6; }
     .menu-container { max-width: 600px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
@@ -11,19 +23,82 @@
     a { text-decoration: none; color: #3498db; font-size: 1.1rem; }
     a:hover { text-decoration: underline; }
   </style>
+  
 </head>
+
 <body>
 
   <div class="menu-container">
     <h1>サイバー攻撃と対応策：練習問題一覧</h1>
     <p>第1問から順番に挑戦してください。</p>
-    <ul>
-      <!-- 各種ファイルへのリンク -->
-      <li><a href="question01.html">第1問：攻撃の種類について①</a></li>
-      <li><a href="question02.html">第2問：攻撃の種類について②</a></li>
-      <li><a href="question03.html">第3問：対応策について</a></li>
-    </ul>
+
+    <!-- 問題一覧 -->
+    <section id="questions">
+
+      <ul>
+        <li>
+          <a href="question01.html">
+            第1問：攻撃の種類について①
+          </a>
+        </li>
+
+        <li>
+          <a href="question02.html">
+            第2問：攻撃の種類について②
+          </a>
+        </li>
+
+        <li>
+          <a href="question03.html">
+            第3問：対応策について
+          </a>
+        </li>
+      </ul>
+
+    </section>
+
   </div>
+
+<!-- 用語説明 -->
+<section class="glossary-container">
+
+  <details>
+    <summary class="glossary-main-title">
+      その他の用語説明
+    </summary>
+
+    <div class="glossary-list">
+
+      <details class="glossary-item">
+        <summary>フィッシング詐欺</summary>
+
+        <div class="glossary-content">
+          偽サイトへ誘導してIDやパスワードを盗む手口。
+        </div>
+      </details>
+
+      <details class="glossary-item">
+        <summary>マルウェア</summary>
+
+        <div class="glossary-content">
+          コンピュータへ悪影響を与える悪意あるソフトウェア。
+        </div>
+      </details>
+
+      <details class="glossary-item">
+        <summary>DDoS攻撃</summary>
+
+        <div class="glossary-content">
+          大量アクセスによってサービスを停止させる攻撃。
+        </div>
+      </details>
+
+    </div>
+
+  </details>
+
+</section>
+
 
 </body>
 </html>
