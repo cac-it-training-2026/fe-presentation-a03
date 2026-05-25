@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>基本情報技術者 フィッシング練習問題</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="quiz-container">
+			
+			<!-- ▼追加：問題ヘッダー -->
+			<div class="question-header">
+				
+				<!-- ▼追加：先頭ページボタン -->
+        		<button 
+        		 class="nav-btn prev-btn"
+        		 onclick="location.href='index.html'">
+            		← 前へ
+        		</button>
+
+        		<!-- ▼既存：問題文 -->	
+ 	       	    <h3 class="quiz-question">
+				問題1: 手順に示すセキュリティ攻撃はどれですか？
+				</h3>
+				
+				<!-- ▼追加：次の問題ボタン -->
+        		<button
+        		 class="nav-btn next-btn"
+        		 onclick="location.href='question02.html'">
+        		    次へ →
+        		</button>
+        		
+			</div>
+            
+            <div>
+				<!-- ▼既存：選択肢 -->
+				<p>[手順]</p>
+				
+				<ol>
+					<li>攻撃者が金融機関の偽のWebサイトを用意する。</li>
+					<li>金融機関の社員を偽って、偽のWebサイトへ誘導するURLを本文中に含めた電子メールを送信する。</li>
+					<li>電子メールの受信者が、その電子メールを信用して本文中にURLをクリックすると、偽のWebサイト
+					    に誘導される。</li>
+					<li>偽のWebサイトと気付かずに認証情報を入力すると、その情報が攻撃者に渡る</li>
+				</ol>
+			</div>
+			
+			<!-- ▼既存：選択肢 -->
+            <form class="quiz-options">
+                <label>
+                    <input type="radio" name="q1" value="1" /> 1. DDoS攻撃
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="2" /> 2. フィッシング
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="3" /> 3. ボット
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="4" /> 4. メールヘッダー
+                    インジェクション
+                </label>
+            </form>
+
+            <details class="quiz-answer">
+				<!-- ▼修正①：全体をdetailsで折りたたみ化（解説の開閉UI） -->
+                <summary>解答と解説を見る</summary>
+                
+                <!-- ▼修正②：正解と解説を分離して「ブロック化」 -->
+                <!-- ■ 正解ブロック（赤枠で強調） -->
+                <div class="answer-box correct-box">
+
+					<!-- ▼修正③：見出しを追加（構造を明確化） -->
+        			<div class="answer-title">正解：</div>
+        			
+        			    <!-- ▼修正④：本文を分離（視認性向上） -->
+        				<div class="answer-text">
+            			2. フィッシング
+        				</div>
+        				
+        			</div>
+
+                    <!-- ■ 解説ブロック（青枠で強調） -->
+    				<div class="answer-box explanation-box">
+						
+        				<!-- ▼修正⑤：見出し追加（正解と区別） -->
+        				<div class="answer-title">解説：</div>
+        				
+        				    <!-- ▼修正⑥：長文を整理（読みやすさ改善） -->
+        					<div class="answer-text">
+								
+                        	フィッシング(phishing)は、銀行やクレジットカード会社、ショッピングサイトなどの<b>有名企業を装
+                        	ったメールを送付</b>し、メール本文内のハイパーリングをクリックさせることで、本物そっくりな<b>偽のWebサイト</b>
+                        	に誘導し、設置してある入力フォームに入力した情報などの<b>個人情報</b>を<b>不正に搾取</b>する行為
+                        	です。<br><br>
+                        	<strong>1.解説：</strong><br />
+                       		DDos攻撃とは、悪意を持った第三者が複数のデバイスを乗っ取り、標的のWebサイトやサーバーへ一斉に大量のアクセスやデータを送りつけるサイバー攻撃です。<br><br>
+                        	<strong>3.解説：</strong><br />
+                        	ボットとは、自動化されたプログラム(ボット）を用いてWebサイトの破壊、データの窃取、不正購入などを大規模かつ高速に行う攻撃のことです。<br><br>
+                        	<strong>4.解説：</strong><br />
+                        	メールヘッダーインジェクションとは、Webサイトのお問い合わせフォームなどで入力された内容に、攻撃者が「改行コード」や「不正なヘッダー情報」を紛れ込ませることで、メールの送信処理を意図的に操作するサイバー攻撃です。
+                        	
+                        	<br><br>
+        					（<a href="https://www.fe-siken.com/kakomon/25_haru/q38.html">基本情報技術者試験 平成25年春期 問38</a> を参考に一部改変）
+        					
+        					<!-- ▼追加：次の問題ボタン -->
+        					<button
+        		 				class="nav-btn next-btn"
+        		 				onclick="location.href='question02.html'">
+        		    				次へ →
+        					</button>
+        					
+                    	</div>
+                	</div>
+            </details>
+        </div>
+        
+		 <div>
+			<a href="index.html">一覧に戻る</a>
+		</div>       
+
+    </body>
+</html>

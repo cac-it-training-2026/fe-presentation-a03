@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>基本情報技術者 マルウェア練習問題</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="quiz-container">
+			
+			<form action="question02.html">
+				
+				<!-- ▼追加：問題ヘッダー -->
+   				<div class="question-header">
+				   
+				<!-- ▼追加：前の問題ボタン -->
+        		<button class="nav-btn prev-btn">
+            		← 前へ
+        		</button>
+
+        		<!-- ▼既存：問題文 -->
+				<h3 class="quiz-question">
+				問題3: クライアントPCで行うマルウェア対策のうち、適切なものはどれですか？
+				</h3>
+				
+    			</div>
+			</form>
+			
+			<!-- ▼既存：選択肢 -->
+            <form class="quiz-options">
+                <label>
+                    <input type="radio" name="q3" value="1" /> 1. PCにおけるウイルスの定期的な手動検査では、ウイルス対策ソフトの
+                    定義ファイルを最新化した日時以降に作成したファイルだけを対象にしてスキャンする。
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="2" /> 2. ウイルスがPCの脆弱性を突いて感染しないように、OS及びアプリケーション
+                    の修正パッチを適切に適用する。
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="3" /> 3. 電子メールに添付されたウイルスに感染しないように、使用しない
+                    TCPポートの通信を禁止する。
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="4" /> 4. ワームが侵入しないように、クライアントPCに動的グローバルIPアドレスを
+                    付与する。
+                </label>
+            </form>
+
+            <details class="quiz-answer">
+                <summary>解答と解説を見る</summary>
+                
+                <div class="answer-box correct-box">
+					
+					<div class="answer-title">正解：</div>
+						<div class="answer-text">
+            			2. ウイルスがPCの脆弱性を突いて感染しないように、OS及びアプリケーションの修正パッチを適切に適用する。
+        				</div>
+                    </div>
+                    
+                    
+                <div class="answer-box explanation-box">
+					
+					<div class="answer-title">解説：</div>
+					
+						<div class="answer-text">
+            				1. 定義ファイルの更新以前にファイルがウイルスに感染している可能性があるため不適切です。</br>
+							<br>
+            				3.電子メールは平時使用されるサービスなので、ポート(TCP25)を塞ぐとウイルス以外の通常のメールが利用できなくなってしまいます。</br>
+        					<br>
+        					4. グローバルIPアドレスを直接付与すると、ワームなどのマルウェアに感染するリスクが高まるため不適切です。</br>
+        					<br>
+        					（<a href="https://www.fe-siken.com/kakomon/25_aki/q42.html">基本情報技術者試験 平成25年秋期 問42</a> から引用）
+        				</div> 			
+        			
+                </div>    
+            </details>
+        </div>
+        
+        <div class="return-index">
+			<a href="index.html">一覧に戻る</a>
+		</div>
+		
+    </body>
+</html>

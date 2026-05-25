@@ -2,7 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>HTML/CSS 課題一覧</title>
+  <title>サイバー攻撃と対応策</title>
+  <!-- 検索エンジン向けのページ説明 -->
+  <meta
+       name="description"
+       content="サイバー攻撃と対応策についての練習問題です。"
+  />
+  <!-- レスポンシブ対応（スマホでも適切なサイズで表示） -->
+  <!-- 画面の横幅を「端末の幅」に合わせ、ページの初期ズーム倍率を「100%」にする -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- 自作CSSファイルを読み込み -->
+  <link rel="stylesheet" href="style.css">
+  
   <style>
     body { font-family: sans-serif; padding: 20px; background-color: #f4f7f6; }
     .menu-container { max-width: 600px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
@@ -11,17 +23,235 @@
     a { text-decoration: none; color: #3498db; font-size: 1.1rem; }
     a:hover { text-decoration: underline; }
   </style>
+  
 </head>
+
 <body>
 
   <div class="menu-container">
-    <h1>HTML/CSS 課題一覧</h1>
-    <p>以下のリンクから問題に挑戦してください。</p>
-    <ul>
-      <!-- ファイルへのリンク -->
-      <li><a href="question00.html">第0問：HTMLの役割</a></li>
-    </ul>
+    <h1>サイバー攻撃と対応策：練習問題一覧</h1>
+    <div style="text-align: center;">
+  		<img src="images/index.png" width="280px" height="280px">
+	</div>
+    <p>第1問から順番に挑戦してください。</p>
+
+    <!-- 問題一覧 -->
+    <section id="questions">
+
+        <li>
+          <a href="question01.html">
+            第1問：攻撃の種類について①
+          </a>
+        </li>
+
+        <li>
+          <a href="question02.html">
+            第2問：攻撃の種類について②
+          </a>
+        </li>
+
+        <li>
+          <a href="question03.html">
+            第3問：対応策について
+          </a>
+        </li>
+      </ul>
+
+    </section>
+
   </div>
+
+<!-- 用語説明 -->
+<section class="glossary-container">
+
+  <details>
+    <summary class="glossary-main-title">
+      その他の用語説明
+    </summary>
+
+    <div class="glossary-list">
+
+		<details class="glossary-item">
+		  <summary>ARPスプーフィング</summary>
+		  <div class="glossary-content">
+		    LAN内で偽のARP情報をばらまき、通信先を攻撃者に誘導して通信を盗聴・改ざんする攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>SEOポイズニング</summary>
+		  <div class="glossary-content">
+		    検索エンジンの上位表示を悪用し、悪意のあるサイトへユーザーを誘導する攻撃。マルウェア配布やフィッシングサイトへの誘導などを目的とする。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>SQLインジェクション</summary>
+		  <div class="glossary-content">
+		    悪意のあるSQL文を入力として注入し、データベースを不正に操作する攻撃。情報の盗み出しや改ざん、削除などが可能になる。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>クリックジャッキング</summary>
+		  <div class="glossary-content">
+		    ユーザーが意図しないクリックをさせる攻撃。透明なボタンやレイヤーを重ねて、重要な操作（送金・設定変更など）を誤って実行させる。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>クレデンシャルスタッフィング</summary>
+		  <div class="glossary-content">
+		    漏洩したIDとパスワードの組み合わせを使い回し、別サービスへの不正ログインを試みる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>クロスサイトスクリプティング（XSS）</summary>
+		  <div class="glossary-content">
+		    Webサイトに悪意あるスクリプトを埋め込み、閲覧したユーザーのブラウザ上で不正な処理を実行させる攻撃。Cookie盗難や偽画面表示などが起こる。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>サイドチャネル攻撃</summary>
+		  <div class="glossary-content">
+		    暗号アルゴリズムそのものではなく、処理時間・電力消費・電磁波などの副次的情報から秘密情報を推測する攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>辞書攻撃</summary>
+		  <div class="glossary-content">
+		    あらかじめ用意した単語リスト（辞書）を使い、パスワードを総当たり的に試す攻撃。よく使われるパスワードに強い。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>セッションハイジャック</summary>
+		  <div class="glossary-content">
+		    正規ユーザーのセッションIDを盗み取り、そのユーザーになりすましてシステムに不正アクセスする攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ゼロデイ攻撃</summary>
+		  <div class="glossary-content">
+		    ソフトウェアやOSの脆弱性が修正される前（0日目）の隙を狙ったサイバー攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ソーシャルエンジニアリング</summary>
+		  <div class="glossary-content">
+		    技術ではなく人間の心理（信頼・焦り・ミス）を利用して、パスワードや機密情報を盗み出す攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>中間者攻撃（Man-in-the-Middle）</summary>
+		  <div class="glossary-content">
+		    通信の途中に攻撃者が割り込み、通信内容を盗聴・改ざんする攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>DNSキャッシュポイズニング</summary>
+		  <div class="glossary-content">
+		    DNSサーバーのキャッシュに偽情報を注入し、正規サイトではなく悪意あるサイトへ誘導する攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>DoS攻撃</summary>
+		  <div class="glossary-content">
+		    標的サーバーに大量のアクセスを送り付け、サービスを停止させる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>トロイの木馬</summary>
+		  <div class="glossary-content">
+		    一見無害なソフトウェアに見せかけて、裏で不正な動作を行うマルウェア。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>バッファオーバーフロー</summary>
+		  <div class="glossary-content">
+		    メモリ領域（バッファ）を超えてデータを書き込み、他の領域を破壊したり不正コードを実行させる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>パスワードスプレー攻撃</summary>
+		  <div class="glossary-content">
+		    少数のよく使われるパスワードを多数のアカウントに試すことで、不正ログインを狙う攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ブルートフォース攻撃</summary>
+		  <div class="glossary-content">
+		    可能なパスワードをすべて試す総当たり攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ボットネット</summary>
+		  <div class="glossary-content">
+		    マルウェアに感染した多数の端末を遠隔操作し、攻撃者が一斉に悪用できるネットワーク。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ポートスキャン攻撃</summary>
+		  <div class="glossary-content">
+		    サーバーの複数ポートを調べ、開いているサービスや脆弱性を探る行為。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>水飲み場攻撃</summary>
+		  <div class="glossary-content">
+		    ターゲットがよく利用するWebサイトを改ざんし、そのサイト経由でマルウェア感染させる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ランサムウェア</summary>
+		  <div class="glossary-content">
+		    データを暗号化し、復号と引き換えに身代金を要求するマルウェア。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>リスト型攻撃</summary>
+		  <div class="glossary-content">
+		    流出したID・パスワードの組み合わせを使い、別サイトへの不正ログインを試みる攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>リプレイ攻撃</summary>
+		  <div class="glossary-content">
+		    正規通信データを記録し、それを再送して不正認証や操作を行う攻撃。
+		  </div>
+		</details>
+		
+		<details class="glossary-item">
+		  <summary>ルートキット</summary>
+		  <div class="glossary-content">
+		    攻撃者が不正侵入の痕跡を隠しつつ、管理者権限を維持するためのツール群。
+		  </div>
+		</details>
+
+    </div>
+
+  </details>
+
+</section>
+
 
 </body>
 </html>

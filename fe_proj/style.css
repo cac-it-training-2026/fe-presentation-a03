@@ -8,25 +8,50 @@ body {
     background-color: #f4f7f6;
 }
 
-/* 問題の枠組み */
+html {
+    overflow-y: scroll;
+}
+
+/* ▼修正：問題の枠組み */
 .quiz-container {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 24px;
-    max-width: 600px;
+    width: 90%; /* 画面の90%まで使用 */
+    max-width: 900px; /* 600px → 1000px */
     margin: 0 auto 24px auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* 問題文 */
-.quiz-question {
-    margin-top: 0;
-    font-size: 1.1rem;
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
+/* ▼追加：問題タイトルとボタンを横並び */
+.question-header {
+    display: flex; /* 横並び */
+    align-items: center; /* 縦位置中央 */
+    justify-content: flex-start; /* 左右配置 */
+    gap: 12px; /* 要素間余白 */
     margin-bottom: 20px;
+}
+
+/* ▼修正：問題文 */
+.quiz-question {
+    margin: 0;
+}
+
+/* ▼追加：ナビゲーションボタン */
+.nav-btn {
+    padding: 10px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* ▼追加：ホバー時 */
+.nav-btn:hover {
+    background-color: #2980b9;
 }
 
 /* 選択肢のレイアウト */
@@ -65,7 +90,7 @@ body {
     background-color: #fcfcfc;
     border: 1px solid #e0e0e0;
     border-radius: 6px;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 /* 「解答と解説を見る」のテキスト部分 */
@@ -89,6 +114,7 @@ body {
     border-top: 1px solid #e0e0e0;
 }
 
+/*
 .correct-answer {
     color: #e74c3c;
     font-size: 1.1rem;
@@ -98,4 +124,156 @@ body {
 .explanation {
     margin-bottom: 0;
     line-height: 1.6;
+}
+*/
+
+/* ▼追加：正解・解説をブロック化するための共通枠 */
+.answer-box {
+    margin-top: 12px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+/* ▼追加：正解を強調表示（赤ライン） */
+.correct-box {
+    border-left: 6px solid #e74c3c;
+}
+
+/* ▼追加：正解文を赤字＋少し大きく表示 */
+.correct-box .answer-text {
+    color: #e74c3c;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* ▼追加：解説を区別表示（青ライン） */
+.explanation-box {
+    border-left: 6px solid #3498db;
+}
+
+/* ▼追加：見出し（正解・解説ラベル） */
+.answer-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* ▼追加：本文の読みやすさ改善 */
+.answer-text {
+    line-height: 1.6;
+}
+
+/* =========================
+   用語説明ブロック全体
+========================= */
+
+/* レイアウト */
+.glossary-container {
+    max-width: 600px;
+    margin: 24px auto 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 余白調整 */
+.glossary-container details {
+    margin: 0;
+}
+
+/* 用語説明タイトル */
+.glossary-main-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    padding: 12px 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 6px;
+}
+
+/* ホバー時 */
+.glossary-main-title:hover {
+    background-color: #f2f2f2; /* 薄いグレー */
+    color: #333;
+}
+
+/* クリック中（押下時） */
+.glossary-main-title:active {
+    background-color: #e0e0e0;
+}
+
+/* 開いている状態の見た目 */
+details[open] .glossary-main-title {
+    background-color: #f7f7f7;
+}
+
+.glossary-main-title::marker {
+    display: none;
+}
+
+/* 矢印をCSSで制御したい場合 */
+.glossary-main-title::before {
+    content: "▼ ";
+    transition: transform 0.2s ease;
+}
+
+/* 開いたとき */
+details[open] .glossary-main-title::before {
+    content: "▲ ";
+}
+
+/* Safari用 */
+.glossary-main-title::-webkit-details-marker {
+    display: none;
+}
+
+/* 用語一覧 */
+.glossary-list {
+    margin-top: 16px;
+}
+
+/* 各用語 */
+.glossary-item {
+    margin-bottom: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* 用語タイトル */
+.glossary-item summary {
+    padding: 14px 16px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    transition: background-color 0.2s ease;
+}
+
+/* Safari用 */
+.glossary-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* ホバー */
+.glossary-item summary:hover {
+    background-color: #2980b9;
+}
+
+/* 開いた時 */
+.glossary-item[open] summary {
+    background-color: #2c3e50;
+}
+
+/* 説明文 */
+.glossary-content {
+    padding: 16px;
+    background-color: #fcfcfc;
+    line-height: 1.6;
+    border-top: 1px solid #e0e0e0;
 }
